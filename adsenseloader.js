@@ -134,10 +134,10 @@
     };
 
 
-  window.addEventListener( 'scroll', throttle( 250, initAds ));
-  window.addEventListener( 'resize', throttle( 1000, initAds ));
-  window.addEventListener( 'resize', throttle( 1000, resizeAds ));
-  window.addEventListener( 'hashchange', initAds);
+  window.addEventListener( 'scroll', throttle( 250, initAds ) );
+  window.addEventListener( 'resize', throttle( 1000, initAds ) );
+  window.addEventListener( 'resize', throttle( 1000, resizeAds ) );
+  window.addEventListener( 'hashchange', initAds, false );
 
 
   function Plugin( elements, options )
